@@ -1,0 +1,2 @@
+powershell "& ".\FileName.ps1""
+exit

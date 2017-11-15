@@ -1,0 +1,18 @@
+[string]::Compare($a, $b, $True)
+
+$a.StartsWith("Script")
+$a.EndsWith("Script")
+
+$a.ToLower()
+$a.ToUpper()
+$d.ToLower()
+
+$a.trim()
+$a.Replace("Scriptign", "Scripting")
+$e.Substring(3,3)
+$e.ToCharArray()
+
+$Text -split  ',' 
+
+$Text.IndexOf('y')
+$a.Contains("ript")

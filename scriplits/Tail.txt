@@ -1,0 +1,4 @@
+Get-Content (read-host "Enter Path to logfile") -wait 
+
+
+#Get-Content -Path "C:\scripts\test.txt" -Wait

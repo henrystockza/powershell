@@ -1,0 +1,29 @@
+$ParamsBlock = {"
+################################################################################## Params
+Param([
+	parameter(
+		Mandatory=$true,
+		Position=0,
+		ValueFromPipelineByPropertyName=$true,
+		ValueFromPipeline=$true,
+		HelpMessage="Enter one or more User names separated by commas.")
+	]
+	[ValidateNotNullOrEmpty()]
+	[alias("UN","User")]
+	[String[]]
+	$UserName,
+	
+	[parameter(
+		Mandatory=$true,
+		Position=1,
+		ValueFromPipelineByPropertyName=$true,
+		ValueFromPipeline=$true,
+		HelpMessage="Enter one or more Computer names separated by commas.")
+	]
+	[ValidateNotNullOrEmpty()]
+	[alias("CN","Computer")]
+	[String[]]
+	$ComputerName
+	
+	[switch]$DebugValue
+) 

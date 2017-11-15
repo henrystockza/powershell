@@ -1,0 +1,9 @@
+$arrShutdown =  Get-EventLog -LogName System -EntryType Information -InstanceId 2147484722 | sort-object $_.Time -descending
+    foreach ($item in $arrShutdown)
+    {
+        $UserName = $item.UserName
+        $Message = $item.Message
+        $Time = $item.TimeGenerated
+        write-host "UserName `t:$username `nTime `t`t:$time `nMessage `t:$Message `n`n"
+
+    }

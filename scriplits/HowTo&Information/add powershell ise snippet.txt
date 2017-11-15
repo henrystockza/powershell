@@ -1,0 +1,2 @@
+New-IseSnippet -Title "ScriptPath" -Description "Creates the variable for PowerShell Script Path" -Author "HstockZa" -Text "$objScriptpath = [System.IO.Path]::GetDirectoryName(System.Management.Automation.InvocationInfo.MyCommand.Definition)" -force
+

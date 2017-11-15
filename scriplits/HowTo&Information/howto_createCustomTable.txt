@@ -1,0 +1,5 @@
+$a = @{Expression={$_.Name};Label="Process Name";width=25}, `
+@{Expression={$_.ID};Label="Process ID";width=15}, `
+@{Expression={$_.MainWindowTitle};Label="Window Title";width=40}
+
+Get-Process | Format-Table $a

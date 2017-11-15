@@ -1,0 +1,5 @@
+#Using bits
+#https://msdn.microsoft.com/en-us/library/windows/desktop/ee663885(v=vs.85).aspx
+#https://technet.microsoft.com/en-us/library/ff382721.aspx
+
+Start-BitsTransfer -Source C:\clientsourcedir\*.txt  -Destination c:\clientdir\ -TransferType Download

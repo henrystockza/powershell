@@ -1,0 +1,20 @@
+`0  Null
+   `a  Alert bell/beep
+   `b  Backspace
+   `f  Form feed (use with printer output)
+   `n  New line
+   `r  Carriage return
+ `r`n  Carriage return + New line
+   `t  Horizontal tab
+   `v  Vertical tab (use with printer output)
+
+ ``  To avoid using a Grave-accent as the escape character
+   `#  To avoid using # to create a comment
+   `'  To avoid using ' to delimit a string
+   `"  To avoid using " to delimit a string
+
+All the lines in a here-string are interpreted as strings, even though they are not enclosed in quotation marks.
+$myHereString = @'
+some text with "quotes" and variable names $printthis 
+some more text 
+'@ 

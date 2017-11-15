@@ -1,0 +1,17 @@
+$VerbosePreference = 
+<#
+Continue 		- Show the message on the console
+SilentlyContinue 	- do not show the message. [this is the Default action]
+Stop 			- show the message and then halt
+Inquire 		- prompt the user
+<#
+
+
+<#
+Write-Debug 		- Write a debug message to the host display
+Write-Error 		- Write an object to the error pipeline.
+Write-Host 			- Display objects through the host user interface
+Write-Output 		- Write an object to the pipeline
+Write-Progress 		- Display a progress bar
+Write-Warning 		- Write a warning message
+#>

@@ -1,0 +1,11 @@
+cd (Drive of Install)
+cd "(Drive of Install)\Program Files\Microsoft Configuration Manager\AdminConsole\bin"
+import-module .\ConfigurationManager.psd1
+cd (Name of Site):
+
+
+Example
+cd c:\
+cd "c:\Program Files\Microsoft Configuration Manager\AdminConsole\bin"
+import-module .\ConfigurationManager.psd1
+cd KJL:

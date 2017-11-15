@@ -1,0 +1,11 @@
+<#Find more information on a command
+1) To find some more information on a command create the referenced command like below
+2) if you use get-variable a you would see that it's just one command referencing another command
+3) so you use get-member like line 25 below. In this it will show you all the information about this command	
+	This includes input, output etc. If you now want to further expand to see exactly what is happening use |fl (line 26)
+4) you will now see all the get;set information for the actual command
+#>
+
+$a=get-command get-process
+$a | get-member
+$a | Get-Member | fl

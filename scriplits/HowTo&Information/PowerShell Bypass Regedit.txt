@@ -1,0 +1,4 @@
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\1\ShellIds\Microsoft.PowerShell
+ExecutionPolicy =>Bypass
+REG_SZ
+

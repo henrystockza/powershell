@@ -1,0 +1,13 @@
+#Namespaces
+get-cimnamespace -list
+
+#Instances
+get-ciminstance -class xyz
+
+#WMI object
+gmwi -namespace
+gwmi -class
+
+#create or use invoke-wmi
+Invoke-WmiMethod –ComputerName MEMBERSRV1 -Class win32_process -Name create -ArgumentList "notepad"
+([WMICLASS]"MEMBERSRV1RootCIMV2:Win32_Process").create("notepad.exe")

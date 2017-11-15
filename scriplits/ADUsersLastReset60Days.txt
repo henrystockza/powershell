@@ -1,0 +1,2 @@
+Import-Module *Active*
+Get-ADuser -Filter {UserPrinciplieName -like "**"}  -prop * | Select isDeleted,enabled,CN,displayName,description, @{n="lastLogonDate";e={[datetime]::FromFileTime($_.l)}},{n="lastLogonDate";e={[datetime]::FromFileTime($_.lastLogonTimestamp)}}, @{n="pwdLastSet";e={[datetime]::FromFileTime($_.pwdLastSet)}},sid,department,employeeID,mail,tel |  where{$_.pwdLastSet -ge (get-date).adddays(-60)} |   export-csv ADUsers.csv

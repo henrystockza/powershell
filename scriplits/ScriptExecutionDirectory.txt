@@ -1,0 +1,6 @@
+#Get Script Execution Directory
+[System.IO.Path]::GetDirectoryName($myInvocation.MyCommand.Definition)
+
+$Scriptroot | split-path -parent
+
+$PSScriptRoot = Split-Path -Parent -Path $MyInvocation.MyCommand.Definition

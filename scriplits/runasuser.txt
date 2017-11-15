@@ -1,0 +1,4 @@
+$pscred = get-cred
+start-process powershell -Credential $pscred -ArgumentList "write-host hello"
+
+# FURTHER INFO--https://blogs.technet.microsoft.com/benshy/2012/06/04/using-a-powershell-script-to-run-as-a-different-user-elevate-the-process/

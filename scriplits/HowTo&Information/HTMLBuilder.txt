@@ -1,0 +1,42 @@
+
+
+#Declaration of Variables
+$objFormattedDate=get-date -f "dd-MM-yyyy HH:mm:ss"
+$objHost=$env:computername
+$objHTML=$null
+
+#Start of HTML Document format
+$objHTML=	"<html>"
+$objHTML+=	"<head>"
+$objHTML+=	"<Title><h1>" + $objHost + "</h1></Title>"
+$objHTML+=	"<Style>"
+$objHTML+=	" table{  border: 1px solid black;}`
+			 td {  border-bottom: 1px solid #ddd;text-align: left;font-size:12}`
+			 .label {  border-bottom: 1px solid #ddd;text-align: left;font-weight: bold;color:blue;font-size:18}`
+			 th {  border-bottom: 1px solid #ddd;text-align: left;font-size:15;}`
+"
+$objHTML+=	"</Style>"
+$objHTML+=	"</head>"
+$objHTML+=	"<body>"
+$objHTML+=	"<h1><b>"+ $objHost+"_"+$objFormattedDate+"</h1></b><th>"
+
+
+###################################################################################### SECTION::
+
+#Method
+
+
+#Set the Table and first header
+$objHTML+=	"<table width=100%>"
+$objHTML+= "<tr> <br> </tr>" 
+$objHTML+= "<tr>"
+$objHTML+= "<th class=""label"" colspan=4> LABEL OF SOMETHING  </th>"
+$objHTML+= "</tr>"
+
+#Set Headers
+$objHTML+= "<tr>"
+$objHTML+= "<th><b> HEADER  </b></th>"
+$objHTML+= "<th><b> HEADER  </b></th>"
+$objHTML+= "<th><b> HEADER  </b></th>"
+$objHTML+= "<th><b> HEADER  </b></th>"
+

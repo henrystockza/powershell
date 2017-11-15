@@ -1,0 +1,1 @@
+Get-CimInstance Win32_GroupUser | where {$_.GroupComponent -like "*admini*"} |select -ExpandProperty PartComponent

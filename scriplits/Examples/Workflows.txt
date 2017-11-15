@@ -1,0 +1,23 @@
+Workflow Test-CheckPoint  {
+ 
+    InlineScript {
+ 
+        "Echo A"
+        Sleep 5
+        "Echo End A"
+    }
+ 
+    Checkpoint-Workflow
+ 
+    InlineScript {
+ 
+        "Echo B"
+        Sleep 5
+        "Echo End B"
+    }
+ 
+    Checkpoint-Workflow
+ 
+    "Echo Tadaaaahhh!"
+ 
+}

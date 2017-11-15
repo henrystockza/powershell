@@ -1,0 +1,6 @@
+Get-Member
+Get-Type()
+
+[math]::round
+[Datetime]
+[string]

@@ -1,0 +1,2 @@
+#Powershell backwards compatability
+powershell.exe -version 2

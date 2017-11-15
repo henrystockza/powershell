@@ -1,0 +1,16 @@
+#Installing Nutanix
+#Login to prism, from the gear cog install the commandlets
+#open Powershell
+
+#CD to .net Directory
+cd C:\windows\Microsoft.NET\Framework\v4.0.30319\
+
+#Install Snapin
+.\InstallUtil.exe “C:\Program Files (x86)\Nutanix Inc\NutanixCmdlets\Modules\NutanixCmdletsPSSnapin.dll”
+
+#Add Snap-in
+%SystemRoot%\syswow64\WindowsPowerShell\v1.0\powershell.exe 
+Add-PsSnapin NutanixCmdletsPSSnapin
+
+Add-PsSnapin "C:\Program Files (x86)\Nutanix Inc\NutanixCmdlets\Modules\NutanixCmdletsPSSnapin.dll"
+

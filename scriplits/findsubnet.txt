@@ -1,0 +1,2 @@
+$localIPAddress.IndexOf('.',($localIpAddress.IndexOf('.',$localIpAddress.indexof('.')+1)+1))
+$localIpAddress.Substring(0,$localIPAddress.IndexOf('.',($localIpAddress.IndexOf('.',$localIpAddress.indexof('.')+1)+1)))

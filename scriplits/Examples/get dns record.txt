@@ -1,0 +1,2 @@
+import-module *dns*
+$objDNSRecord = get-dnsrecord -recordtype A | select name,RecordData

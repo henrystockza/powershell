@@ -1,0 +1,34 @@
+
+<# 
+.Synopsis
+	Checks services and identifies all services that need to be running.
+	Attempts to restart if they are not running. Reports on success and failures
+.DESCRIPTION
+   This script runs through all services and fixes services that should be running.
+   Du to space limitations it has currently only got faulty services enabled for logging.
+   Upon trying to restart the service 3 times and failing it will report the service down.
+   Down will report NOK, up OK and remediated Fixed.
+   Due to the number fo services Faulty services by default are enabled in one file.
+   Running services that are non faulty are in another report but disabled
+   This report has a cleanup task that runs every 30 days
+.Parameter
+.Inputs
+	-Computername
+.Outputs
+	This file will generate an output file of ".\$ComputerName-ServicesFAULTY-$Date.txt"
+	and  ".\$ComputerName-ServicesOK-$Date.txt"
+.Example
+    Diskspace -computername 
+.Notes
+	This report will error out if unable to connect to the server with a try/catch/finally statement
+	Created by 	: Henry Stock
+	Version 	: V1.0.0.0a
+	Dated		: March 2016
+	Authorised	: Henry Stock
+	OS			: Windows
+	Clients		: All
+	PS Version	: All
+.Link
+	
+
+#>

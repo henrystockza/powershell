@@ -1,0 +1,34 @@
+$states = @{"Washington" = "Olympia"; "Oregon" = "Salem"; California = "Sacramento"}
+$states.Add("Alaska", "Fairbanks")
+$states.Remove("Alaska")
+
+
+$states.Set_Item("Alaska", "Juneau")
+
+
+$states.ContainsKey("Oregon")
+$states.ContainsValue("Salem")
+
+$states | Sort-Object
+
+
+$states.GetEnumerator() | Sort-Object Value -descending
+
+$states.GetEnumerator() | Sort-Object Name
+
+
+
+
+
+$array -contains "Hourray!"
+"Hourray!" -in $array
+$array -match "Hour"
+
+
+$Array = New-Object System.Collections.ArrayList
+$Array.add(1)
+$Array.add(2)
+$Array.Remove("Hourray!")
+
+$jagged = @(("A","B","C","D"),("X","Y","Z"))
+$multi = New-Object 'object[,]' 10,20

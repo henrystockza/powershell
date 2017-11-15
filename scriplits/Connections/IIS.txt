@@ -1,0 +1,4 @@
+#IIS module 
+#& "$env:programfiles\IIS\PowerShellSnapin\iisConsole.psc1"
+Import-Module WebAdministration
+cd iis:\

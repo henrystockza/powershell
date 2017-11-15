@@ -1,0 +1,14 @@
+$arrDisk = Get-WmiObject -class Win32_LogicalDisk
+    foreach($Item in $arrDisk)
+    {
+        $Name = $Item.DeviceID 
+        $Caption = $item.VolumeName
+        $PercentFree = [math]::round( ( ($item.FreeSpace /$item.Size)*100),2)
+        $PercentUsed =  [math]::round( ((  $item.Size - $item.FreeSpace )/$item.Size)*100,2)
+        $FreeSpace = [math]::round($item.FreeSpace/1gb,2)
+        $UsedSpace =  [math]::round(($item.Size/1gb - $item.FreeSpace/1gb ),2)     
+        $TotalSize =  [math]::round($item.Size/1gb,2)
+
+        write-host "Drive `t:$Name `nLabel `t:$Caption `n%Free `t:$PercentFree% `n%Used `t:$PercentUsed% `nFree `t:$FreeSpace GB `nUsed `t:$UsedSpace GB `nTotal `t:$TotalSize GB `n"
+
+    }

@@ -1,0 +1,4 @@
+Get-EventLog -LogName Application -After (Get-Date).AddDays(-2) -EntryType "Error" | export-csv .\ApplicationLog-Errors.csv
+Get-EventLog -LogName Application -After (Get-Date).AddDays(-2) -EntryType "Warning" | export-csv .\ApplicationLog-Warnings.csv
+Get-EventLog -LogName System -After (Get-Date).AddDays(-2) -EntryType "Error" | export-csv .\SystemLog-Errors.csv
+Get-EventLog -LogName System -After (Get-Date).AddDays(-2) -EntryType "Warning" | export-csv .\SystemLog-Warnings.csv

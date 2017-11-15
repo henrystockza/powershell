@@ -1,0 +1,72 @@
+Get-Date
+(Get-Date).AddDays(1)
+(Get-Date).AddDays(1)
+(Get-Date).AddHours(1)
+(Get-Date).AddMilliseconds(1)
+(Get-Date).AddMinutes(1)
+(Get-Date).AddMonths(1)
+(Get-Date).AddSeconds(1)
+(Get-Date).AddTicks(1)
+(Get-Date).AddYears(1)
+
+
+
+(get-date).day
+(get-date).dayofweek
+(get-date).dayofyear
+(get-date).hour
+(get-date).millisecond
+(get-date).minute
+(get-date).month
+(get-date).second
+(get-date).timeofday
+(get-date).year
+
+
+new-object system.globalization.datetimeformatinfo
+
+
+get-date -format
+
+Specifier				Format              						Sample Output
+d					ShortDatePattern						8/30/2007
+D					LongDatePattern							Thursday, August 30, 2007
+f					Full date and time (long date and short time)			Thursday, August 30, 20
+F					FullDateTimePattern (long date and long time)			Thursday, August 30, 2007 11:19:59 AM
+g					General (short date and short time)				8/30/2007 11:20 AM
+G					General (short date and long time)				8/30/2007 11:20:24 AM
+m, M					MonthDayPattern							August 30
+o					Round-trip date/time pattern					[TEXT]
+2007-08-30T11:18:49.0312500-07:00	RFC1123Pattern							Thu, 30 Aug 2007 11:21:36 GMT
+s					SortableDateTimePattern (based on ISO 8601) using local time	2007-08-30T11:20:36
+t					ShortTimePattern						11:20 AM
+T					LongTimePattern							11:20:42 AM
+u					UniversalSortableDateTimePattern format for universal time	2007-08-30 11:21:50Z
+U					Full date and time (long date and long time) using universal 	Thursday, August 30, 2007 6:21:52 PM
+y, Y					YearMonthPattern						August, 2007
+
+Specifier		Description
+d. %d			The day of the month. Single-digit days will not have a leading zero. Specify "%d" if the format pattern is not combined with other format patterns.
+dd			The day of the month. Single-digit days will have a leading zero.
+ddd			The abbreviated name of the day of the week.
+dddd			The full name of the day of the week, as defined in DayNames.
+h, %h			The hour in a 12-hour clock. Single-digit hours will not have a leading zero. Specify "%h" if the format pattern is not combined with other format patterns.
+hh			The hour in a 12-hour clock. Single-digit hours will have a leading zero.
+H, %H			The hour in a 24-hour clock. Single-digit hours will not have a leading zero. Specify "%H" if the format pattern is not combined with other format patterns.
+HH			The hour in a 24-hour clock. Single-digit hours will have a leading zero.
+m, %m			The minute. Single-digit minutes will not have a leading zero. Specify "%m" if the format pattern is not combined with other format patterns.
+mm			The minute. Single-digit minutes will have a leading zero.
+M, %M			The numeric month. Single-digit months will not have a leading zero. Specify "%M" if the format pattern is not combined with other format patterns.
+MM			The numeric month. Single-digit months will have a leading zero.
+MMM			The abbreviated name of the month, as defined in AbbreviatedMonthNames.
+MMMM			The full name of the month, as defined in MonthNames.
+s, %s			The second. Single-digit seconds will not have a leading zero. Specify "%s" if the format pattern is not combined with other format patterns.
+ss			The second. Single-digit seconds will have a leading zero.
+t, %t			The first character in the AM/PM designator defined in AMDesignator or PMDesignator, if any. Specify "%t" if the format pattern is not combined with other format patterns.
+tt			The AM/PM designator defined in AMDesignator or PMDesignator, if any.
+y, %y			The year without the century. If the year without the century is less than 10, the year is displayed with no leading zero. Specify "%y" if the format pattern is not combined with other format patterns.
+yy			The year without the century. If the year without the century is less than 10, the year is displayed with a leading zero.
+yyy			The year in three digits. If the year is less than 100, the year is displayed with a leading zero.
+yyyy			The year in four or five digits (depending on the calendar used), including the century. Will pad with leading zeroes to get four digits. Thai Buddhist and Korean calendars both have five digit years; users selecting the "yyyy" pattern will see all five digits without leading zeros for calendars that have five digits. Exception: the Japanese and Taiwan calendars always behave as if "yy" was selected.
+%c			Where c is a format pattern if used alone. That is, to use format pattern "d", "f", "F", "h", "m", "s", "t", "y", "z", "H", or "M" by itself, specify "%d", "%f", "%F", "%h", "%m", "%s", "%t", "%y", "%z", "%H", or "%M". The "%" character can be omitted if the format pattern is combined with literal characters or other format patterns.
+\c			Where c is any character. Displays the character literally. To display the backslash character, use "\\".

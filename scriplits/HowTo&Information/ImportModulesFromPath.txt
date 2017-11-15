@@ -1,0 +1,1 @@
+Add-Content -Path $Profile -Value 'Import-Module "C:\Program Files (x86)\SomeProduct\PowerShell\ProductModule.psd1"' -Force

@@ -1,0 +1,1 @@
+Get-ItemProperty ".\New Text Document.txt" | fl -prop *

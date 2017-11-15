@@ -1,0 +1,5 @@
+#open Powershell x86
+#%SystemRoot%\syswow64\WindowsPowerShell\v1.0\powershell.exe
+#Add Nutanix Snappin
+Add-PsSnapin NutanixCmdletsPSSnapin
+Connect-NutanixCluster -server $objNutanixBlockIP  -AcceptInvalidSSLCerts

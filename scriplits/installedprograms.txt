@@ -1,0 +1,6 @@
+foreach ($item in (get-childitem HKlm:\Software\Microsoft\Windows\CurrentVersion\Uninstall)) `
+{$name = $item.GetValue("Displayname"); `
+ $version= $item.GetValue("DisplayVersion"); `
+ $publisher= $item.GetValue("Publisher"); `
+ $uninstall = $item.GetValue("UninstallString"); `
+ write-host "$name, $version, publisher, $uninstall"}

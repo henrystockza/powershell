@@ -1,0 +1,2 @@
+#Server manager module
+Import-Module ServerManager

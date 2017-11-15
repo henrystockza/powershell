@@ -1,0 +1,11 @@
+<#This Is how you find parameters of a command
+
+1) Set your variable and call the command you want with get command.
+2) Be careful not to leave it openended otherwise you going to get a huge output. i.e get-command get-*
+3) Now use $a.ParameterSets to see whats listed in the parameters.
+4) You now have all the information on what parameters are available on the get-process command. #>
+
+
+
+$a=get-command get-process
+$a.ParameterSets[0]
