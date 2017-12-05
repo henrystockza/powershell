@@ -1,0 +1,29 @@
+Get-WmiObject -namespace root\rsop\computer -class RSOP_AuditPolicy | select Category,Success,Failure
+Category
+Success
+Failure
+
+Get-WmiObject -namespace root\rsop\computer -class RSOP_SecuritySettingNumeric | select KeyName,Setting
+KeyName
+Setting
+
+Get-WmiObject -namespace root\rsop\computer -class RSOP_UserPrivilegeRight | select UserRight,AccountList
+UserRight
+AccountList
+
+Get-WmiObject -namespace root\rsop\computer -class RSOP_SecuritySettingString | select KeyName,Setting
+KeyName
+Setting
+
+
+
+
+
+
+Get-WmiObject -namespace root\rsop\computer -class RSOP_RegistryValue | select Path,Data
+Path
+Data
+
+Get-WmiObject -namespace root\rsop\computer -class RSOP_SecurityEventLogSettingNumeric | select KeyName,Setting
+KeyName
+Setting

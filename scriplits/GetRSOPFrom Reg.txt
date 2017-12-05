@@ -1,0 +1,5 @@
+#RUN AS ADMIN
+
+Get-WmiObject -namespace root\rsop\computer -class RSOP_SecuritySettings  | select path, data ,setting, userright, accountlist
+Get-WmiObject -namespace root\rsop\computer -list
+Get-WmiObject -Namespace root\rsop\user -list
